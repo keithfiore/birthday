@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.passioncoded.happybirthday.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/party"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#009688"
+        android:text="It's My Birthday!"
+        android:textColor="@android:color/white"
+        android:textSize="44sp" />
+
+    <TextView
+        android:id="@+id/invited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="0"
+        android:background="#009688"
+        android:text="You're Invited!"
+        android:textColor="@android:color/white"
+        android:textSize="44sp" />
+
+
+    <Button
+        android:id="@+id/RSVP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="RSVP"
+        android:layout_toRightOf="@id/invited"
+        android:layout_weight="0"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text="RSVP"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="26sp"
+        />
+</RelativeLayout>
